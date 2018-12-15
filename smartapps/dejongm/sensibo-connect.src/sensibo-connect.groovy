@@ -431,7 +431,7 @@ def refreshDevices() {
 	}
 }
 
-def getChildNamespace() { "EricG66" }
+def getChildNamespace() { "dejongm" }
 def getChildTypeName() { "SensiboPod" }
 
 def initialize() {
