@@ -1058,7 +1058,7 @@ def pollChildren(PodUid)
     	uri: "${getServerUrl()}",
     	path: "/api/v2/pods/${thermostatIdsString}/measurements",
     	requestContentType: "application/json",
-    	query: [apiKey:"${getapikey()}", integration:"${version()}", type:"json", fields:"batteryVoltage,temperature,humidity,time"]]
+    	query: [apiKey:"${getapikey()}", integration:"${version()}", type:"json", fields:"temperature,humidity,time"]]
 
 	debugEvent ("Before HTTPGET to Sensibo.")
 
@@ -1106,7 +1106,7 @@ def pollChildren(PodUid)
                     }
 
 					def battpourcentage = 100
-                    def battVoltage = stat.batteryVoltage
+                    def battVoltage = null
                     
 					if (battVoltage == null) 
                     {
