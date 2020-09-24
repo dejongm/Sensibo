@@ -23,7 +23,7 @@ preferences {
 }
 
 metadata {
-	definition (name: "SensiboPod", namespace: "dejongm", author: "Eric Gosselin", oauth: false) {
+	definition (name: "SensiboPod", namespace: "EricG66", author: "Eric Gosselin", oauth: false) {
 		capability "Relative Humidity Measurement"
 		capability "Temperature Measurement"
 		capability "Polling"
@@ -1389,7 +1389,8 @@ def parseEventData(Map results)
 				sendEvent(
 					name: name,
 					value: value,
-                    //unit : device.currentValue("temperatureUnit"),
+                    //unit: "F",
+                    unit : device.currentValue("temperatureUnit"),
 					linkText: linkText,
 					descriptionText: getThermostatDescriptionText(name, value, linkText),
 					handlerName: name,
@@ -1403,7 +1404,8 @@ def parseEventData(Map results)
 				sendEvent(
 					name: name,
 					value: value,
-                    //unit: value,
+                    //unit: "F",
+                    unit: value,
 					linkText: linkText,
 					descriptionText: getThermostatDescriptionText(name, value, linkText),
 					handlerName: name,
@@ -1447,7 +1449,7 @@ def parseEventData(Map results)
 				sendEvent(
 					name: name,
 					value: value,
-					//unit: device.currentValue("temperatureUnit"),
+					unit: device.currentValue("temperatureUnit"),
 					linkText: linkText,
 					descriptionText: getThermostatDescriptionText(name, value, linkText),
 					handlerName: name,
