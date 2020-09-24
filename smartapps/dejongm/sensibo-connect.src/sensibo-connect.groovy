@@ -15,8 +15,8 @@
  */
 
 definition(
-    name: "Sensibo",
-    namespace: "dejongm",
+    name: "Sensibo (Connect)",
+    namespace: "EricG66",
     author: "Eric Gosselin",
     description: "Connect your Sensibo Pod to SmartThings.",
     category: "Green Living",
