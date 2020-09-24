@@ -16,7 +16,7 @@
 
 definition(
     name: "Sensibo (Connect)",
-    namespace: "EricG66",
+    namespace: "dejongm",
     author: "Eric Gosselin",
     description: "Connect your Sensibo Pod to SmartThings.",
     category: "Green Living",
@@ -453,7 +453,7 @@ def refreshDevices() {
 	}
 }
 
-def getChildNamespace() { "EricG66" }
+def getChildNamespace() { "dejongm" }
 def getChildTypeName() { "SensiboPod" }
 
 def initialize() {
