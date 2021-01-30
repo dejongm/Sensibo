@@ -1244,7 +1244,7 @@ def parseTempUnitEventData(Map results)
 				sendEvent(
 					name: name,
 					value: value,
-                    //unit: value,
+                                        unit: value,
 					linkText: linkText,
 					descriptionText: "${name} = ${value}",
 					handlerName: "temperatureUnit",
